@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+		<meta charset = "UTF-8">
+		<title>fizzBuzz.html</title>
+		
+		<script type="text/javascript">
+		function fizzBuzz(){
+			
+			var count = 1;
+			var numbers = new Array();
+			
+			for(i = 0; i < 100; i++){
+				
+				numbers[i] = count;
+			
+				if (numbers[i] % 5 == 0 && numbers[i] % 3 == 0){
+					console.log(numbers[i] + " fizzBuzz");
+					document.write(numbers[i] + " fizzBuzz");
+					}
+				else if (numbers[i] % 5 == 0){
+					console.log(numbers[i] + " fizz");
+					document.write(numbers[i] + " fizz");
+					}
+				else if (numbers[i] %3 == 0){
+					console.log(numbers[i] + " buzz");
+					document.write(numbers[i] + " buzz");
+					}
+				else {
+					console.log(numbers[i]);
+					document.write(numbers[i]);
+					}
+				count++;
+				document.write("<br></br>")
+			}//end for
+		}//end fizzBuzz()
+		</script>
+</head>
+<body> 
+
+<form action = "">
+	<fieldset>
+		<label>Click to Run fizzBuzz Program</label>
+			<button type = "button"
+					onclick = "fizzBuzz()">Click Here</button>
+					
+	</fieldset>
+</form>
+
+</body>
+</html>
